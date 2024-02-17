@@ -23,6 +23,9 @@ public final class FetchStaticFiles {
     
     private static final Pattern CSS_SEARCH =
         Pattern.compile("url\\(['\"](.+?)['\"]");
+        
+    private static final String BLOCKCODE_REGEX = 
+        "<div class=\"codebox\"><p>.+?</a></p><pre><code>.*?</code></pre></div></div>";    
     
     private static int total;
        
@@ -42,7 +45,7 @@ public final class FetchStaticFiles {
         
         try {
             
-            contentFile = backupcc.file.Util.readTextFile(file);
+            contentFile = backupcc.file.Util.readTextFile(file).replaceAll(BLOCKCODE_REGEX, "");
             
         }
         catch (IOException e) {
@@ -52,6 +55,7 @@ public final class FetchStaticFiles {
             backupcc.tui.OptionBox.abortBox(msgs);
             
         }//try-catch
+        
 
         Matcher matcher = pattern.matcher(contentFile);
         
