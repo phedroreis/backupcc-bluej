@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Topic
+comment0.text=\n\ Um\ objeto\ desta\ classe\ coleta\ e\ retorna\ informacoes\ sobre\ uma\ pagina\ de\ \n\ topico\ do\ forum.\ Estes\ dados\ sao\ obtidos\ das\ paginas\ de\ Sections.\n\ \n\ Um\ trecho\ de\ codigo\ HTML,\ contendo\ dados\ de\ um\ topico,\ deve\ ser\ enviado\ como\n\ argumento\ ao\ construtor\ da\ classe.\ E\ deste\ bloco\ de\ codigo\ o\ construtor\ ira\n\ obter\ a\ ID,\ NAME,\ FILENAME\ e\ URL\ ABSOLUTE\ deste\ topico.\n\ \n\ Portanto\ um\ metodo\ deverah\ varrer\ o\ arquivo\ fonte\ de\ cada\ pagina\ de\ secao\ em\ \n\ busca\ destes\ blocos\ de\ codigo,\ criando\ objetos\ desta\ classe.\ Um\ para\ cada\n\ topico\ apontado\ na\ pagina\ de\ secao\ que\ encontrar.\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (25\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=htmlBlock
+comment1.target=Topic(java.lang.String)
+comment1.text=\n\ Construtor\ da\ classe\ extrai\ os\ dados\ de\ um\ topico\ a\ partir\ de\ um\ bloco\n\ de\ codigo\ contido\ no\ codigo\ fonte\ de\ uma\ pagina\ de\ secao\ do\ forum.\n\ \n\ @param\ htmlBlock\ O\ bloco\ de\ codigo\ HTML\ da\ pagina\ de\ secao\ do\ forum\ de\n\ onde\ se\ pode\ extrair\ dados\ de\ um\ topico.\n\ \n
+comment2.params=
+comment2.target=java.util.regex.Pattern\ getFinder()
+comment2.text=\n\ Retorna\ um\ objeto\ Pattern\ com\ a\ regexp\ que\ permite\ localizar\ blocos\ de\n\ codigo\ HTML\ (em\ uma\ pagina\ de\ Header)\ de\ onde\ os\ dados\ de\ uma\ \n\ Section\ podem\ ser\ extraidos.\n\ \n\ @return\ A\ regexp\ para\ localizar\ blocos\ de\ codigo\ HTML\ na\ pagina\ principal\n\ do\ forum\ que\ contem\ os\ dados\ das\ secoes\ do\ forum.\n
+comment3.params=
+comment3.target=int\ getNumberOfPosts()
+comment3.text=\n\ Retorna\ o\ numero\ de\ posts\ que\ tem\ o\ topico.\ \n\ \n\ @return\ O\ numero\ de\ respostas\ que\ tem\ o\ topico.\n
+comment4.params=postNumber
+comment4.target=int\ getPageNumberOfThisPost(int)
+comment4.text=\n\ Retorna\ o\ numero\ da\ pagina\ que\ tem\ o\ post\ de\ numero\ postNumber.\n\ \n\ @param\ postNumber\ O\ indice\ do\ post.\n\ \n\ @return\ O\ numero\ da\ pagina.\n
+comment5.params=
+comment5.target=int\ getNumberOfPages()
+comment5.text=\n\ Retorna\ o\ numero\ de\ paginas\ que\ tem\ este\ topico.\n\ \n\ @return\ O\ numero\ de\ paginas\ do\ topico.\n
+numComments=6

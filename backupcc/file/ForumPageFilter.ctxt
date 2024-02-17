@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ForumPageFilter
+comment0.text=\n\ Um\ filtro\ para\ o\ metodo\ listFiles()\ da\ classe\ File.\ Retorna\ apenas\ arquivos\n\ que\ sejam\ paginas\ do\ forum\ gravadas\ em\ disco.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 3\ de\ setembro\ de\ 2022\n\ @version\ 1.0\n
+comment1.params=dir\ filename
+comment1.target=boolean\ accept(java.io.File,\ java.lang.String)
+comment1.text=\n\ Verifica\ se\ eh\ um\ arquivo\ cujo\ nome\ corresponde\ a\ uma\ pagina\ do\ forum\n\ gravada\ no\ disco.\n\ \n\ @param\ dir\ nao\ usado.\n\ \n\ @param\ filename\ O\ nome\ do\ arquivo.\n\ \n\ @return\ true\ se\ eh\ um\ arquivo\ cujo\ nome\ corresponde\ a\ uma\ pagina\ do\ forum\n\ gravada\ no\ disco.\n
+numComments=2

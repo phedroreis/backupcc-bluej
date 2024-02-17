@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FetchMain
+comment0.text=\n\ Classe\ encarregada\ de\ baixar\ a\ p\u00E1gina\ principal\ do\ forum,\ localizar\ (nesta\n\ pagina)\ o\ endereco\ das\ paginas\ dos\ headers\ e\ disponibilizar\ estes\ \n\ enderecos\ atraves\ de\ um\ objeto\ TreeSet.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (23\ de\ agosto\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=main
+comment1.target=FetchMain(backupcc.pages.Main)
+comment1.text=\n\ Construtor\ da\ classe.\n\ \n\ @param\ main\ Um\ objeto\ Main\ com\ os\ dados\ da\ pagina\ principal\ do\ forum.\n
+comment2.params=
+comment2.target=void\ downloadMainPage()
+comment2.text=\n\ Baixa\ a\ pagina\ principal\ do\ forum\ para\ o\ diretorio\ onde\ todas\ as\ paginas\n\ brutas\ (arquivos\ HTML\ nao\ editados\ pelo\ programa)\ serao\ gravadas.\n\ \n
+comment3.params=
+comment3.target=java.util.TreeSet\ getHeaders()
+comment3.text=\n\ Este\ metodo\ coleta\ dados\ (na\ pagina\ principal\ do\ forum)\ sobre\ as\ paginas\n\ de\ HEADER\ do\ forum.\ Para\ cada\ HEADER\ apontado\ na\ pagina\ principal,\ este\ \n\ metodo\ ira\ criar\ um\ objeto\ backupcc.pages.Header\ com\ os\ dados\ deste\ \n\ header.\ No\ final,\ um\ TreeSet\ contendo\ todos\ estes\ objetos\ serah\ retornado\n\ pelo\ metodo.\n\ \n\ Uma\ pagina\ de\ HEADER\ eh\ aquela\ que\ aponta\ para\ paginas\ de\ secao\ do\ forum.\n\ \ \n\ @return\ Um\ TreeSet\ (ordenado\ por\ ID\ do\ Header)\ com\ todos\ os\ Headers\n\ apontados\ na\ pagina\ principal.\n\ \n
+numComments=4

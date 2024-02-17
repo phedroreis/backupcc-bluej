@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FetchHeaders
+comment0.text=\n\ Classe\ encarregada\ de\ localizar\ (na\ pagina\ principal)\ o\ endereco\ das\ paginas\n\ dos\ headers\ e\ disponibilizar\ estes\ enderecos\ atraves\ de\ um\ objeto\ TreeSet.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (23\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=main
+comment1.target=FetchHeaders(backupcc.pages.Main)
+comment1.text=\n\ Construtor\ da\ classe.\n\ \n\ @param\ main\ Objeto\ com\ os\ dados\ da\ pagina\ principal\ do\ forum.\n
+comment2.params=
+comment2.target=void\ downloadHeadersPages()
+comment2.text=\n\ Obtem\ da\ pagina\ \ principal\ a\ lista\ de\ todos\ os\ headers\ do\ forum\ e\ baixa\n\ as\ paginas\ de\ HEADER.\n\ \n
+comment3.params=
+comment3.target=java.util.TreeSet\ getSections()
+comment3.text=\n\ Obtem\ os\ dados\ das\ paginas\ de\ secao\ a\ partir\ da\ lista\ de\ todas\ as\ paginas\n\ de\ headers.\n\ \n\ @return\ Um\ TreeSet\ com\ objetos\ Section\ com\ os\ dados\ de\ todas\ as\ paginas\n\ de\ secao\ do\ forum.\n\ \n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Header
+comment0.text=\n\ Um\ objeto\ desta\ classe\ coleta\ e\ retorna\ informacoes\ sobre\ uma\ pagina\ de\ \n\ header\ do\ forum.\ Estes\ dados\ sao\ obtidos\ da\ pagina\ principal.\n\ \n\ Um\ trecho\ de\ codigo\ HTML,\ contendo\ dados\ de\ um\ HEADER,\ deve\ ser\ enviado\ como\n\ argumento\ ao\ construtor\ da\ classe.\ E\ deste\ bloco\ de\ codigo\ o\ construtor\ ira\n\ obter\ a\ ID,\ NAME,\ FILENAME\ e\ URL\ ABSOLUTE\ do\ HEADER.\n\ \n\ Portanto,\ um\ metodo\ deverah\ varrer\ o\ arquivo\ fonte\ da\ pagina\ principal\ em\ \n\ busca\ destes\ blocos\ de\ codigo,\ criando\ objetos\ desta\ classe.\ Um\ para\ cada\n\ HEADER\ apontado\ na\ pagina\ principal\ que\ encontrar.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (23\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=htmlBlock
+comment1.target=Header(java.lang.String)
+comment1.text=\n\ @param\ htmlBlock\ O\ bloco\ de\ codigo\ HTML\ da\ pagina\ principal\ do\ forum\ de\n\ onde\ se\ pode\ extrair\ dados\ de\ um\ HEADER.\ (O\ Header\ eh\ a\ pagina\ que\ aponta\n\ para\ uma\ lista\ de\ secoes\ do\ forum).\ Serao\ obtidos\ deste\ bloco\ a\ id\ do\ \n\ header,\ o\ endereco\ absoluto\ da\ sua\ pagina,\ o\ nome\ do\ arquivo\ com\ o\ qual\ \n\ esta\ pagina\ deve\ ser\ gravada\ no\ disco\ local\ e\ tambem\ o\ nome\ do\ header.\n\ \n\ No\ momento\ em\ que\ estas\ linhas\ sao\ escritas\ ha\ 3\ headers\ no\ forum\:\n\ \n\ AVISOS\ E\ TESTES\n\ DEBATES\n\ DIVERSAO\n\ \ \ \n
+comment2.params=
+comment2.target=java.util.regex.Pattern\ getFinder()
+comment2.text=\n\ Retorna\ um\ objeto\ Pattern\ com\ a\ regexp\ que\ permite\ localizar\ blocos\ de\n\ codigo\ HTML\ (da\ pagina\ principal\ do\ forum)\ de\ onde\ os\ dados\ de\ um\ header\n\ podem\ ser\ extraidos.\n\ \n\ @return\ A\ regexp\ para\ localizar\ blocos\ de\ codigo\ HTML\ na\ pagina\ principal\n\ do\ forum\ que\ contem\ os\ dados\ das\ secoes\ de\ HEADER\ do\ forum.\n
+numComments=3

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=OptionBox
+comment0.text=\n\ Um\ objeto\ desta\ classe\ permite\ exibir\ no\ terminal\ um\ box\ com\ um\ titulo\ \n\ configuravel,\ varias\ linhas\ de\ texto\ e\ uma\ lista\ de\ opcoes\ para\ o\ usuario\n\ escolher.\ As\ opcoes\ devem\ ser\ selecionadas\ com\ uma\ unica\ tecla\ de\ letra\ \n\ (pode\ ser\ maiuscula\ ou\ minuscula)\ e\ em\ seguida\ ENTER.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (20\ de\ agosto\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=msgs\ options\ shortcuts\ frameColor\ msgsColor
+comment1.target=OptionBox(java.lang.String[],\ java.lang.String[],\ java.lang.String,\ int,\ int)
+comment1.text=\n\ Construtor\ da\ classe.\n\ \n\ @param\ msgs\ Uma\ lista\ de\ linhas\ de\ texto\ a\ serem\ exibidas\ no\ box.\ Quando\n\ uma\ destas\ linhas\ terminar\ em\ newline,\ uma\ linha\ em\ branco\ abaixo\ dela\ \n\ sera\ criada\ no\ box.\ Se\ passada\ como\ null\ uma\ excecao\ eh\ lancada.\n\ \n\ @param\ options\ Uma\ lista\ de\ opcoes\ a\ serem\ escolhidas\ pelo\ usuario.\ \n\ Opcoes\ do\ tipo\ Aborta,\ Repete,\ Termina,\ Sim,\ Nao\ ...\ etc...\ Cada\ opcao\n\ devera\ ser\ selecionada\ com\ uma\ letra\ do\ teclado.\ Tanto\ faz\ se\ teclando\n\ esta\ letra\ em\ maiuscula\ ou\ minuscula.\ Se\ passada\ como\ null\ uma\ excecao\ eh\n\ lancada.\n\ \n\ @param\ shortcuts\ Uma\ string\ contendo\ as\ letras\ que\ selecionam,\ \n\ respectivamente\ as\ opcoes\ passadas\ no\ parametro\ options,\ seguindo\ a\n\ mesma\ ordem\ destes\ paramentros\ no\ array\ options.\ Exemplo\:\ se\ options\ \=\n\ {"Aborta",\ "Repete"},\ entao\ shortcuts\ \=\ "ar"\ faria\ com\ que\ A\ ou\ a\ \n\ selecionasse\ Aborta\ e\ R\ ou\ r\ selecionasse\ repete.\ Na\ verdade\ o\ metodo\n\ showBox()\ desta\ classe\ retornaria\ 'a'\ caso\ fosse\ teclado\ A\ ou\ a\ para\ o\n\ metodo\ que\ o\ chamou.\ E\ este\ metodo\ eh\ que\ se\ encarregaria\ de\ tomar\ a\ acao\n\ correspondente\ a\ Abortar.\ showBox()\ apenas\ informa\ qual\ opcao\ escolhida\ \n\ pelo\ usuario.\n\ \n\ @param\ frameColor\ A\ cor\ da\ moldura\ do\ box.\ Pode\ ser\ entre\ -1\ (nenhuma)\n\ e\ 7.\n\ \n\ @param\ msgsColor\ A\ cor\ do\ texto\ das\ mensagens.Pode\ ser\ entre\ -1\ (nenhuma)\n\ e\ 7.\n\ \n\ @throws\ InvalidParameterException\ Se\ um\ parametro\ invalido\ for\ passado\ a\n\ este\ construtor.\n
+comment2.params=s\ color
+comment2.target=void\ writeln(java.lang.String,\ int)
+comment2.text=\n\ \ \ \ Este\ metodo\ funciona\ como\ um\ auxiliar\ pra\ o\ metodo\ showBox.\ Formata\ e\n\ \ \ \ imprime\ as\ linhas\ de\ texto\ dentro\ de\ um\ metodo\ showBox().\ Quando\ o\n\ \ \ \ parametro\ s\ eh\ passado\ terminando\ com\ um\ newline,\ abaixo\ de\ s\ serah\ \n\ \ \ \ impressa\ uma\ linha\ em\ branco\ no\ OptionBox\n
+comment3.params=
+comment3.target=char\ showBox()
+comment3.text=\n\ Exibe\ o\ box\ no\ terminal\ e\ solicita\ que\ o\ usuario\ tecle\ a\ opcao\ escolhida.\n\ \n\ @return\ O\ caractere\ (em\ MINUSCULA)\ que\ foi\ teclado\ para\ selecionar\ uma\n\ das\ opcoes.\n
+comment4.params=msgs
+comment4.target=void\ abortBox(java.lang.String[])
+comment4.text=\n\ Um\ OptionBox\ para\ abortar\ o\ programa\ em\ caso\ de\ erro\ fatal.\n\ \n\ @param\ msgs\ As\ mensagens\ do\ box.\n\ \n
+comment5.params=msgs
+comment5.target=void\ warningBox(java.lang.String[])
+comment5.text=\n\ Um\ OptionBox\ para\ mensagens\ de\ aviso.\n\ \n\ @param\ msgs\ As\ mensagens\ do\ box.\n\ \n
+comment6.params=msgs
+comment6.target=boolean\ retryBox(java.lang.String[])
+comment6.text=[04]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment7.params=
+comment7.target=void\ theEndBox()
+comment7.text=\n\ Um\ OptionBox\ para\ aviso\ de\ termino\ do\ programa.\n
+numComments=8

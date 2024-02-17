@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ViewforumPhp
+comment0.text=\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 6\ de\ setembro\ de\ 2022\n\ @version\ 1.0\n
+comment1.params=matcher\ hashMap
+comment1.target=void\ map(java.util.regex.Matcher,\ java.util.HashMap)
+comment1.text=[01]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment2.params=
+comment2.target=java.util.regex.Pattern\ getPattern()
+comment2.text=[02]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+numComments=3

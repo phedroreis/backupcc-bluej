@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\n\ Um\ objeto\ desta\ subclasse\ de\ Page\ deverah\ ser\ construido\ com\ os\ dados\ da\n\ pagina\ principal\ do\ forum.\ Para\ que,\ a\ partir\ do\ codigo\ fonte\ obtido\ com\ o\n\ download\ desta\ pagina,\ o\ programa\ possa\ obter\ acesso\ as\ paginas\ de\ headers.\n\ E\ por\ meio\ dos\ headers,\ acesso\ as\ sections.\ E\ das\ sections\ obter\ os\ topics.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 25\ de\ agosto\ de\ 2022\n\ @version\ 1.0\n
+comment1.params=url\ filename
+comment1.target=Main(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Um\ objeto\ desta\ subclasse\ de\ Page\ deverah\ ser\ construido\ com\ os\ dados\ da\n\ pagina\ principal\ do\ forum.\ Para\ que,\ a\ partir\ do\ codigo\ fonte\ obtido\ com\n\ o\ download\ desta\ pagina,\ o\ programa\ possa\ obter\ acesso\ as\ paginas\ de\ \n\ headers.\n\ E\ por\ meio\ dos\ headers,\ acesso\ as\ sections.\ E\ das\ sections\ obter\ os\n\ topics.\ \n\ \n\ @param\ url\ Deve\ ser\ a\ URL\ de\ acesso\ ao\ forum.\n\ @param\ filename\ O\ nome\ com\ o\ qual\ a\ pagina\ principal\ serah\ gravada\ no\ \n\ disco\ local.\n
+numComments=2

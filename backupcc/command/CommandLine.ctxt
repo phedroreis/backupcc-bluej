@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CommandLine
+comment0.text=\n\ Esta\ classe\ \u00E9\ respons\u00E1vel\ por\ fazer\ o\ parse\ da\ linha\ de\ comando\ que\ pode\n\ selecionar\ o\ tipo\ de\ terminal.\ \n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (10\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=commands
+comment1.target=CommandLine(java.lang.String[])
+comment1.text=\n\ <p>Faz\ o\ parse\ dos\ argumentos\ passados\ na\ linha\ de\ comando\ para\ a\ \n\ aplica\u00E7\u00E3o.</p>\n\ \n\ <p>\ Sem\ argumentos\ na\ linha\ de\ comando,\ o\ sistema\ ir\u00E1\ usar\ o\ padr\u00E3o\ de\ \n\ terminal\ de\ acordo\ com\ o\ sistema\ operacional\ onde\ estiver\ rodando.</p>\n\ \n\ <ul>\n\ <li>\n\ -w\ \:\ for\u00E7a\ que\ as\ sa\u00EDdas\ para\ o\ terminal\ sejam\ no\ padr\u00E3o\ de\ um\ terminal\n\ do\ sistema\ Windows\n\ </li>\n\ <li>\n\ -u\ \:\ for\u00E7a\ que\ as\ sa\u00EDdas\ para\ o\ terminal\ sejam\ no\ padr\u00E3o\ de\ sistemas\n\ Unix,\ reconhecendo\ comandos\ ANSI\n\ </li>\n\ <li>\n\ -t\ \:\ gera\ um\ arquivo\ com\ uma\ lista\ de\ todos\ os\ t\u00F3picos\n\ </li>\n\ </ul>\n\ \n\ @param\ commands\ Linha\ de\ comando\ digitada\ ao\ executar\ o\ programa.\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ Informa\u00E7\u00E3o\ textual\ sobre\ a\ classe.\n\ \n\ @return\ Informa\u00E7\u00E3o\ textual\ sobre\ a\ classe.\n
+numComments=3

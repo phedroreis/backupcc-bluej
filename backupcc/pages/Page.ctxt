@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Page
+comment0.text=\n\ Superclasse\ para\ as\ classes\ que\ analisam,\ coletam,\ armazenam\ e\ fornecem\ \n\ (atraves\ dos\ metodos\ desta\ superclasse)\ dados\ da\ PAGINA\ PRINCIPAL,\ das\ \n\ paginas\ de\ HEADERS,\ SECOES\ E\ TOPICOS\ do\ forum.\n\ \n\ Uma\ subclasse\ que\ estenda\ esta\ (exceto\ a\ subclasse\ Main),\ deve\ \n\ obrigatoriamente\ fornecer\ um\ metodo\ estatico\ getFinder(),\ que\ deverah\n\ retornar\ um\ objeto\ Pattern\ com\ o\ padrao\ de\ regexp\ a\ ser\ aplicado\ para\n\ localizar\ o\ bloco\ HTML\ que\ contem\ os\ dados\ da\ pagina\ de\ \n\ HEADER,\ SECAO\ OU\ TOPICO.\ Bloco\ HTML\ este\ que\ deve\ ser\ enviado\ ao\ \n\ construtor\ da\ respectiva\ subclasse,\ para\ que\ dele\ o\ construtor\ extraia\ os\n\ seguintes\ dados\:\n\ \n\ -\ id\ (um\ numero\ inteiro)\ do\ HEADER,\ SECAO\ ou\ TOPICO.\ Para\ Main\ serah\ 0.\n\ -\ filename\ com\ o\ qual\ o\ arquivo\ de\ HEADER,\ SECAO\ ou\ TOPICO\ sera\ gravado\ no\ \n\ disco\ local.\ Para\ a\ subclasse\ Main\ este\ nome\ de\ arquivo\ serah\ enviado\ em\n\ um\ parametro\ no\ seu\ construtor.\n\ \n\ -\ name\ do\ HEADER,\ SECAO\ ou\ TOPICO.\ Para\ Main\ o\ name\ sera\ "Principal"\n\ \n\ -\ absoluteURL\ A\ URL\ para\ baixar\ o\ arquivo\ referente\ ao\ HEADER,\ SECAO\ ou\n\ TOPICO.\ Para\ a\ subclasse\ Main\ (que\ eh\ referente\ a\ pagina\ inicial\ do\ forum)\ \n\ esta\ URL\ serah\ a\ URL\ de\ acesso\ ao\ proprio\ forum.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 23\ de\ agosto\ de\ 2022\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=int\ getId()
+comment1.text=\n\ Retorna\ a\ id\ de\ um\ header,\ secao\ ou\ topico.\ 0\ se\ for\ a\ pagina\ principal.\n\ \n\ @return\ A\ id.\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ Retorna\ o\ nome\ de\ um\ header,\ secao\ ou\ topico.\ "Principal"\ para\ um\ objeto\n\ da\ subclasse\ Main.\n\ \n\ @return\ O\ nome.\n
+comment3.params=
+comment3.target=java.lang.String\ getFilename()
+comment3.text=\n\ O\ nome\ do\ arquivo\ de\ um\ header\ ou\ da\ pagina\ principal.\n\ Nesta\ versao,\ para\ a\ pagina\ principal\ (dados\ coletados\ por\ um\ objeto\ da\n\ subclasse\ Main),\ o\ nome\ do\ arquivo\ eh\ clubeceticismo.com.br.html\n\ \n\ @return\ O\ nome\ do\ arquivo.\n
+comment4.params=pageIndex
+comment4.target=java.lang.String\ getFilename(int)
+comment4.text=\n\ O\ nome\ do\ arquivo\ de\ secao\ ou\ topico.\ \n\ \n\ @param\ pageIndex\ O\ indice\ da\ pagina.\ A\ primeira\ tem\ indice\ 0.\n\ \n\ @return\ O\ nome\ do\ arquivo.\n
+comment5.params=
+comment5.target=java.lang.String\ getAbsoluteURL()
+comment5.text=\n\ O\ endereco\ absoluto\ da\ pagina\ com\ o\ header,\ secao\ ou\ topico.\n\ \n\ @return\ A\ url\ absoluta.\ O\ endereco\ atual\ da\ pagina\ principal\ eh\n\ https\://clubeceticismo.com.br\n
+comment6.params=pageIndex
+comment6.target=java.lang.String\ getAbsoluteURL(int)
+comment6.text=\n\ O\ endereco\ absoluto\ da\ pagina\ de\ secao\ ou\ topico.\n\ \n\ @param\ pageIndex\ O\ indice\ da\ pagina.\ A\ primeira\ tem\ indice\ 0.\n\ \n\ @return\ A\ url\ absoluta.\ \n
+comment7.params=page
+comment7.target=int\ compareTo(java.lang.Object)
+comment7.text=\n\ Implementa\ a\ interface\ Comparable\ usando\ como\ criterio\ de\ ordenacao\ a\n\ id\ das\ paginas.\ Na\ estrutura\ TreeSet\ que\ ira\ armazenar\ objetos\ de\ \n\ subclasses\ de\ Page,\ estes\ objetos\ estarao\ portanto\ ordenados\ pela\ id.\n\ \n\ @param\ page\ Um\ objeto\ Main,\ Header,\ Section,\ Topic,\ ou\ Post.\n\ \n\ @return\ Um\ numero\ positivo\ se\ a\ Id\ deste\ item\ for\ maior\ que\ a\ do\ item\n\ comparado.\ 0\ se\ for\ igual\ e\ negativo\ se\ for\ menor.\n
+numComments=8

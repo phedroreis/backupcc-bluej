@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Section
+comment0.text=\n\ Um\ objeto\ desta\ classe\ coleta\ e\ retorna\ informacoes\ sobre\ uma\ pagina\ de\ \n\ secao\ do\ forum.\ Estes\ dados\ sao\ obtidos\ das\ paginas\ de\ Header.\n\ \n\ Um\ trecho\ de\ codigo\ HTML,\ contendo\ dados\ de\ uma\ secao,\ deve\ ser\ enviado\ como\n\ argumento\ ao\ construtor\ da\ classe.\ E\ deste\ bloco\ de\ codigo\ o\ construtor\ ira\n\ obter\ a\ ID,\ NAME,\ FILENAME\ e\ URL\ ABSOLUTE\ desta\ section.\n\ \n\ Portanto\ um\ metodo\ deverah\ varrer\ o\ arquivo\ fonte\ de\ cada\ pagina\ de\ header\ em\ \n\ busca\ destes\ blocos\ de\ codigo,\ criando\ objetos\ desta\ classe.\ Um\ para\ cada\n\ secao\ apontada\ na\ pagina\ de\ header\ que\ encontrar.\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (24\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=htmlBlock
+comment1.target=Section(java.lang.String)
+comment1.text=\n\ Construtor\ da\ classe\ extrai\ os\ dados\ de\ uma\ Section\ a\ partir\ de\ um\ bloco\n\ de\ codigo\ contido\ no\ codigo\ fonte\ de\ uma\ pagina\ de\ Header\ do\ forum.\n\ \n\ @param\ htmlBlock\ O\ bloco\ de\ codigo\ HTML\ da\ pagina\ Header\ do\ forum\ de\n\ onde\ se\ pode\ extrair\ dados\ de\ uma\ Section.\n
+comment2.params=
+comment2.target=java.util.regex.Pattern\ getFinder()
+comment2.text=\n\ Retorna\ um\ objeto\ Pattern\ com\ a\ regexp\ que\ permite\ localizar\ blocos\ de\n\ codigo\ HTML\ (em\ uma\ pagina\ de\ Header)\ de\ onde\ os\ dados\ de\ uma\ \n\ Section\ podem\ ser\ extraidos.\n\ \n\ @return\ A\ regexp\ para\ localizar\ blocos\ de\ codigo\ HTML\ na\ pagina\ principal\n\ do\ forum\ que\ contem\ os\ dados\ das\ secoes\ do\ forum.\n
+comment3.params=
+comment3.target=int\ getNumberOfTopics()
+comment3.text=\n\ Retorna\ o\ numero\ de\ topicos\ que\ tem\ esta\ secao.\n\ \n\ @return\ O\ numero\ de\ topicos\ da\ secao.\n
+comment4.params=
+comment4.target=int\ getNumberOfPages()
+comment4.text=\n\ Retorna\ o\ numero\ de\ paginas\ que\ tem\ esta\ secao.\n\ \n\ @return\ O\ numero\ de\ paginas\ da\ secao.\n
+numComments=5

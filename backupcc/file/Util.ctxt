@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Util
+comment0.text=\n\ M\u00E9todos\ e\ campos\ \u00FAteis\ para\ manipula\u00E7\u00E3o\ de\ arquivos\ e\ diret\u00F3rios.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (23\ de\ agosto\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=path
+comment1.target=void\ mkDirs(java.lang.String)
+comment1.text=\n\ Cria\ um\ diretorio\ se\ este\ ainda\ nao\ existir.Se\ necessario\ irah\ criar\n\ tambem\ todos\ os\ subdiretorios\ do\ caminho.\n\ \n\ @param\ path\ O\ caminho\ com\ os\ diretorios\ a\ serem\ criados.\n
+comment2.params=file
+comment2.target=java.lang.String\ readTextFile(java.io.File)
+comment2.text=\n\ Le\ um\ arquivo\ de\ texto\ para\ dentro\ de\ um\ objeto\ String.\ O\ arquivo\ deve\ \n\ estar\ codificado\ em\ UTF8.\n\ \n\ @param\ file\ O\ arquivo.\n\ \n\ @return\ A\ String\ com\ o\ conteudo\ do\ arquivo.\n\ \n\ @throws\ IOException\ Em\ caso\ de\ erro\ de\ IO.\n
+comment3.params=file
+comment3.target=java.lang.String\ readTextFile(java.lang.String)
+comment3.text=\n\ Le\ um\ arquivo\ de\ texto\ para\ dentro\ de\ um\ objeto\ String.\ O\ arquivo\ deve\ \n\ estar\ codificado\ em\ UTF8.\n\ \n\ @param\ file\ O\ arquivo.\n\ \n\ @return\ A\ String\ com\ o\ conteudo\ do\ arquivo.\n\ \n\ @throws\ IOException\ Em\ caso\ de\ erro\ de\ IO.\n
+comment4.params=file\ content
+comment4.target=void\ writeTextFile(java.io.File,\ java.lang.String)
+comment4.text=\n\ Escreve\ o\ conteudo\ de\ uma\ String\ em\ um\ arquivo\ texto.\ Se\ o\ arquivo\ jah\n\ existir\ seu\ conteudo\ serah\ substituido\ por\ esta\ String,\ e\ se\ nao\ existir\n\ serah\ criado.\ A\ String\ deve\ ser\ UTF0.\n\ \n\ @param\ file\ O\ arquivo.\n\ \n\ @param\ content\ A\ String\ codificada\ em\ UTF-8.\n\ \n\ @throws\ IOException\ Em\ caso\ de\ erro\ de\ IO.\n
+comment5.params=filename\ content
+comment5.target=void\ writeTextFile(java.lang.String,\ java.lang.String)
+comment5.text=\n\ Escreve\ o\ conteudo\ de\ uma\ String\ em\ um\ arquivo\ texto.\ Se\ o\ arquivo\ jah\n\ existir\ seu\ conteudo\ serah\ substituido\ por\ esta\ String,\ e\ se\ nao\ existir\n\ o\ arquivo\ serah\ criado.\ A\ String\ deve\ ser\ UTF8.\n\ \n\ @param\ filename\ O\ arquivo.\n\ \n\ @param\ content\ A\ String\ codificada\ em\ UTF-8.\n\ \n\ @throws\ IOException\ Em\ caso\ de\ erro\ de\ IO.\n
+comment6.params=
+comment6.target=void\ createWarningFile()
+comment6.text=\n\ Cria\ o\ arquivo\ com\ a\ pagina\ informando\ se\ tratar\ de\ uma\ copia\ estatica\ do\n\ forum.\n\ \n
+comment7.params=htmlBody
+comment7.target=void\ createTopicsListFile(java.lang.String)
+comment7.text=\n\ Grava\ um\ arquivo\ com\ os\ nomes\ de\ todos\ os\ t\u00F3picos\ do\ f\u00F3rum.\n\ \n\ @param\ htmlBody\ Uma\ lista\ com\ links\ para\ todos\ os\ t\u00F3picos.\n
+numComments=8

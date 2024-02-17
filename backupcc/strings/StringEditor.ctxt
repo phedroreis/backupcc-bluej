@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=StringEditor
+comment0.text=\n\ <p>Esta\ classe\ se\ destina\ a\ fornecer\ um\ objeto\ mais\ eficiente\ para\ edi\u00E7\u00E3o\ de\ \n\ String.</p>\n\ \n\ <p>Como\ \u00E9\ sabido,\ um\ objeto\ String\ \u00E9\ imut\u00E1vel\ e\ altera\u00E7\u00F5es\ em\ Strings\ s\u00E3o\ \n\ computacionalmente\ custosas\ em\ Java.\ Um\ objeto\ StringEditor\ fornece\ o\ \n\ m\u00E9todo\ {@link\ \#replace(java.lang.String,\ java.lang.String)\ replace}\ que\n\ substitui\ substrings\ em\ um\ objeto\ String\ usando\ internamente\ um\ objeto\ \n\ StringBuilder.</p>\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (12\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=str
+comment1.target=StringEditor(java.lang.String)
+comment1.text=\n\ Contrutor\ da\ classe\n\ \n\ @param\ str\ Uma\ string\ a\ ser\ editada\ com\ o\ m\u00E9doto\ {@link\ \#replace(java.lang.String,\ java.lang.String)\ replace}\n
+comment2.params=target\ replacement
+comment2.target=void\ replace(java.lang.String,\ java.lang.String)
+comment2.text=\n\ Substitui\ substrings\ na\ String\ original.\n\ \n\ @param\ target\ Substring\ a\ ser\ substitu\u00EDda.\n\ \n\ @param\ replacement\ String\ de\ substitui\u00E7\u00E3o.\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ Retorna\ a\ String\ original\ com\ as\ edi\u00E7\u00F5es\ feitas\ pelo\ m\u00E9todo\ replace.\n\ \n\ @return\ A\ String\ original\ editada\ pelo\ m\u00E9todo\ replace.\n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FetchStaticFiles
+comment0.text=\n\ Classe\ encarregada\ de\ baixar\ os\ arquivos\ est\u00E1ticos\ hospedados\ no\ servidor\n\ do\ f\u00F3rum.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (3\ de\ setembro\ 2022)\n\ @version\ 1.1\n
+comment1.params=file\ pattern\ group\ serverPath
+comment1.target=void\ searchInFile(java.io.File,\ java.util.regex.Pattern,\ int,\ java.lang.String)
+comment1.text=[01]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment2.params=
+comment2.target=void\ fetchStaticFiles()
+comment2.text=[02]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+numComments=3

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ProgressBar
+comment0.text=\n\ Implementa\ uma\ barra\ de\ status\ de\ progresso\ no\ terminal.\ \n\ \n\ @since\ 16\ de\ agosto\ de\ 2022\n\ @version\ 1.0\n\ @author\ "Pedro\ Reis"\n
+comment1.params=total\ barLength\ fg\ bg
+comment1.target=ProgressBar(int,\ int,\ int,\ int)
+comment1.text=\n\ O\ construtor\ da\ classe.\n\ \n\ @param\ total\ Total\ de\ itens\ a\ serem\ processados.\n\ \n\ @param\ barLength\ Largura\ da\ barra\ em\ caracateres.\n\ \n\ @param\ fg\ A\ cor\ de\ texto\ para\ a\ barra\ de\ progresso.\n\ \n\ @param\ bg\ A\ cor\ de\ fundo\ para\ a\ barra\ de\ progresso.\n
+comment2.params=total\ barLength\ fg
+comment2.target=ProgressBar(int,\ int,\ int)
+comment2.text=\n\ O\ construtor\ da\ classe.\n\ \n\ @param\ total\ Total\ de\ itens\ a\ serem\ processados.\n\ \n\ @param\ barLength\ Largura\ da\ barra\ em\ caracateres.\n\ \n\ @param\ fg\ A\ cor\ de\ texto\ para\ a\ barra\ de\ progresso.\n\ \n
+comment3.params=
+comment3.target=void\ show()
+comment3.text=\n\ Exibe\ ou\ reexibe\ a\ barra\ de\ progresso\ no\ terminal.\n
+comment4.params=done
+comment4.target=void\ update(int)
+comment4.text=\n\ Atualiza\ a\ barra\ de\ progresso.\n\ \n\ @param\ done\ Quantos\ itens\ ja\ foram\ processados.\n
+numComments=5

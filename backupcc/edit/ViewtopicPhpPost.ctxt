@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ViewtopicPhpPost
+comment0.text=\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (9\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=post
+comment1.target=java.lang.String\ getFilename(int)
+comment1.text=[01]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment2.params=matcher\ hashMap
+comment2.target=void\ map(java.util.regex.Matcher,\ java.util.HashMap)
+comment2.text=[02]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment3.params=
+comment3.target=java.util.regex.Pattern\ getPattern()
+comment3.text=[03]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+numComments=4

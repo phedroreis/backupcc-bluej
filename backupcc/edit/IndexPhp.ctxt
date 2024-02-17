@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=IndexPhp
+comment0.text=\n\ Um\ objeto\ desta\ classe\ \u00E9\ respons\u00E1vel\ por\ editar\ os\ links\ que\ apontam\ para\ a\n\ p\u00E1gina\ principal\ do\ f\u00F3rum.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (6\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=matcher\ hashMap
+comment1.target=void\ map(java.util.regex.Matcher,\ java.util.HashMap)
+comment1.text=\n\ Associa\ um\ link\ para\ a\ p\u00E1gina\ principal\ com\ o\ link\ que\ ir\u00E1\ substitui-lo\n\ na\ c\u00F3pia\ est\u00E1tica\ apontando\ para\ o\ arquivo\ no\ disco\ com\ uma\ c\u00F3pia\ \n\ est\u00E1tica\ da\ p\u00E1gina\ principal.\n\ \n\ @param\ matcher\ Objeto\ Matcher\ passado\ logo\ ap\u00F3s\ o\ m\u00E9todo\ find()\ ter\ \n\ localizado\ um\ link\ para\ a\ p\u00E1gina\ principal.\n\ \n\ @param\ hashMap\ HashMap\ para\ associar\ o\ link\ original\ ao\ link\ que\ dever\u00E1\n\ substitui-lo\ nas\ c\u00F3pias\ est\u00E1ticas.\n
+comment2.params=
+comment2.target=java.util.regex.Pattern\ getPattern()
+comment2.text=\n\ Retorna\ a\ regex\ que\ localiza,\ nos\ arquivos\ originais,\ links\ para\ a\n\ p\u00E1gina\ principal.\n\ \n\ @return\ regex\ que\ localiza,\ nos\ arquivos\ originais,\ links\ para\ a\n\ p\u00E1gina\ principal.\n
+numComments=3

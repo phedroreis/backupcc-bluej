@@ -1,6 +1,5 @@
 /doc/
 *.class
-*.bluej
 *.txt
 *.TXT
-*.ctxt
+

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FetchPages
+comment0.text=\n\ Classe\ p\u00FAblica\ do\ pacote\ que\ fornece\ o\ m\u00E9todo\ {@link\ \#downloadPages()\ }\n\ encarregado\ de\ baixar\ todas\ as\ p\u00E1ginas\ do\ f\u00F3rum.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (25\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=
+comment1.target=void\ downloadPages()
+comment1.text=\n\ Baixa\ todas\ as\ p\u00E1ginas\ do\ f\u00F3rum.\ \n\ \n
+numComments=2

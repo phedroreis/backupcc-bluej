@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FetchSections
+comment0.text=\n\ Classe\ encarregada\ de\ localizar\ (nas\ paginas\ dos\ headers)\ o\ endereco\ das\ \n\ paginas\ das\ secoes\ e\ disponibilizar\ estes\ enderecos\ atraves\ de\ um\ objeto\ \n\ TreeSet.\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (25\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=main
+comment1.target=FetchSections(backupcc.pages.Main)
+comment1.text=\n\ Construtor\ da\ classe.\n\ \n\ @param\ main\ Objeto\ que\ deve\ conter\ os\ dados\ da\ pagina\ principal\ do\ forum.\n
+comment2.params=
+comment2.target=void\ downloadSectionsPages()
+comment2.text=\n\ Baixa\ as\ p\u00E1ginas\ de\ se\u00E7\u00E2o.\n\ \n
+comment3.params=
+comment3.target=java.util.TreeSet\ getTopics()
+comment3.text=\n\ Processa\ os\ arquivos\ com\ as\ p\u00E1ginas\ de\ se\u00E7\u00E3o\ para\ obter\ os\ dados\ que\n\ permitam\ baixar\ todas\ as\ p\u00E1ginas\ de\ t\u00F3picos.\n\ \n\ @return\ Um\ TreeSet\ com\ registros\ para\ todos\ os\ t\u00F3picos\ do\ f\u00F3rum.\n
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Util
+comment0.text=\n\ Esta\ classe\ disponibiliza\ metodos\ estaticos\ uteis\ para\ manipulacao\ de\n\ Strings.\ \n\ \n\ @since\ 16\ de\ agosto\ de\ 2022\n\ @version\ 1.0\n\ @author\ "Pedro\ Reis"\n
+comment1.params=c\ count
+comment1.target=java.lang.String\ repeatChar(char,\ int)
+comment1.text=\n\ Retorna\ um\ objeto\ String\ com\ o\ caractere\ c\ repetindo\ count\ vezes.\ Se\ \n\ count\ \=\ 0\ serah\ retornada\ uma\ string\ vazia.\n\ \n\ @param\ c\ O\ caractere\ a\ ser\ repetido\ na\ string.\n\ @param\ count\ O\ num.\ de\ repeticoes\ do\ caractere.\ Sera\ tambem\ o\ comprimento\n\ da\ string\ retornada.\n\ @return\ Um\ objeto\ String\ com\ o\ char\ c\ repetido\ count\ vezes.\n
+comment2.params=c\ s\ length
+comment2.target=java.lang.String\ pad(char,\ java.lang.String,\ int)
+comment2.text=\n\ "Acolchoa"\ uma\ string\ com\ o\ caractere\ especificado.\n\ \n\ @param\ c\ O\ caractere\ para\ acolchoamento.\n\ \n\ @param\ s\ A\ string.\n\ \n\ @param\ length\ Qual\ o\ comprimento\ da\ string\ acolchoada\ que\ deve\ ser\ \n\ retornada.\n\ \n\ @return\ A\ String\ s\ acolchoada\ com\ o\ caractere\ c\ ate\ atingir\ o\ comprimento\n\ length.\ A\ String\ s\ eh\ retornada\ centralizada\ no\ acolchoamento.\n
+numComments=3

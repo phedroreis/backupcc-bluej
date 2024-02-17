@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Util
+comment0.text=\n\ Utilitarios\ para\ checar\ a\ integridade\ de\ dados.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 29\ de\ agosto\ de\ 2022\n\ @version\ 1.0\n
+comment1.params=data
+comment1.target=java.lang.String\ sha256(java.lang.String)
+comment1.text=\n\ Obtem\ e\ retorna\ o\ hash\ sha256\ de\ uma\ string.\n\ @param\ data\n\ @return\ \n
+numComments=2

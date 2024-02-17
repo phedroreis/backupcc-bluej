@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=FetchTopics
+comment0.text=\n\ Classe\ encarregada\ de\ baixar\ as\ paginas\ de\ topico.\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (25\ de\ agosto\ de\ 2022)\n\ @version\ 1.1\n
+comment1.params=main
+comment1.target=FetchTopics(backupcc.pages.Main)
+comment1.text=\n\ Construtor\ da\ classe.\n\ \n\ @param\ main\ Objeto\ que\ deve\ conter\ os\ dados\ da\ pagina\ principal\ do\ forum.\n
+comment2.params=updatedTopics\ totalOfNewPosts
+comment2.target=void\ showUpdatedInfo(int,\ int)
+comment2.text=[01]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+comment3.params=
+comment3.target=void\ downloadTopicsPages()
+comment3.text=\n\ Baixa\ as\ paginas\ de\ t\u00F3picos.\n\ \n
+comment4.params=
+comment4.target=void\ getPosts()
+comment4.text=[03]----------------------------------------------------------------------\n\ \ \ \ \n--------------------------------------------------------------------------
+numComments=5

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Util
+comment0.text=\n\ M\u00E9todos\ utilit\u00E1rios\ est\u00E1ticos\ para\ data\ e\ hora.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (1\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=java.lang.String\ now()
+comment1.text=\n\ Retorna\ a\ data\ e\ hora\ atuais\ formatada\ como\ dd-MM-yyyy(HH'h'mm'm'ss's').\n\ \n\ @return\ Data\ e\ hora\ formatadas\ compactamente.\n
+comment2.params=datetime
+comment2.target=java.lang.String\ dateTime(java.lang.String)
+comment2.text=\n\ Converte\ do\ formato\ compacto\ para\ o\ formato\ por\ extenso.\n\ \n\ @param\ datetime\ Data\ e\ hora\ no\ formato\ compacto.\n\ \n\ @return\ Data\ e\ hora\ por\ extenso.\n
+comment3.params=
+comment3.target=void\ setBackupStartTime()
+comment3.text=\n\ Executado\ no\ m\u00E9todo\ {@link\ backupcc.incremental.Incremental\#init()\ init\ }\n\ marca\ o\ instante\ do\ in\u00EDcio\ do\ processo\ de\ backup.\n
+comment4.params=
+comment4.target=void\ setMilestoneTime()
+comment4.text=\n\ Guarda\ o\ instante\ de\ tempo\ em\ que\ foi\ chamado.\ Para\ que\ o\ m\u00E9todo\n\ {@link\ \#getElapsedTimeTo(int)\ },\ quando\ executado,\ determine\ o\ intervalo\n\ de\ tempo\ entre\ as\ chamadas\ destes\ dois\ m\u00E9todos.\n
+comment5.params=start
+comment5.target=java.lang.String\ getElapsedTimeTo(int)
+comment5.text=\n\ Retorna\ o\ intervalo\ de\ tempo\ desde\ o\ in\u00EDcio\ do\ processo\ de\ backup,\ ou\n\ da\ defini\u00E7\u00E3o\ do\ \u00FAltimo\ milestoneTime\ setado\ pela\ chamada\ do\ m\u00E9todo\n\ {@link\ \#setMilestoneTime()\ },\ de\ acordo\ com\ o\ argumento\ passado\ ao\n\ par\u00E3metro\ start.\n\ \n\ @param\ start\ Se\ o\ intervalo\ \u00E9\ referente\ ao\ in\u00EDcio\ do\ processo\ de\ backup\n\ ou\ ao\ \u00FAltimo\ milestoneTime\ definido.\n\ \n\ @return\ O\ intervalo\ de\ tempo\ formatado.\ \n
+numComments=6

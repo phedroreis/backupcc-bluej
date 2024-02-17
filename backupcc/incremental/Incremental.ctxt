@@ -1,0 +1,34 @@
+#BlueJ class context
+comment0.target=Incremental
+comment0.text=\n\ Um\ arquivo\ com\ o\ numero\ de\ posts\ de\ cada\ topico\ eh\ gravado\ ao\ fim\ de\ cada\ \n\ backup.\ No\ proximo\ backup,\ estes\ dados\ serao\ comparados\ com\ o\ numero\ de\ \n\ posts\ de\ cada\ \ topico\ indicado\ nas\ paginas\ de\ Section\ do\ forum.\ Se\ entre\ um\n\ backup\ e\ outro,\ um\ topico\ tiver\ recebido\ novos\ posts,\ as\ paginas\ destes\ \n\ novos\ posts\ (e\ apenas\ estas)\ serao\ baixadas.\n\ \n\ Esta\ classe\ eh\ responsavel\ por\ ler\ e\ gravar\ o\ arquivo\ com\ o\ numero\ de\ posts\n\ de\ cada\ topico\ alem\ de\ fornecer\ os\ metodos\ estaticos\ necessarios\ ao\ \n\ gerenciamento\ do\ backup\ incremental.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (27\ de\ agosto\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=void\ init()
+comment1.text=\n\ Inicializa\ o\ processo\ incremental\ verificando\ se\ um\ backup\ previo\ jah\n\ foi\ realizado.\ Se\ sim,\ le\ o\ arquivo\ e\ carrega\ os\ dados\ do\ ultimo\ backup\n\ com\ o\ numero\ de\ posts\ em\ cada\ topico\ quando\ do\ backup\ anterior.\ Em\ caso\ \n\ contrario,\ se\ nao\ houve\ backup\ anterior,\ um\ full\ backup\ serah\ iniciado.\n\ \n
+comment10.params=
+comment10.target=java.lang.String\ lastBackupDatetime()
+comment10.text=\n\ Retorna\ a\ data\ hora\ do\ \u00FAltimo\ backup\ ou\ se\ \u00E9\ full.\n\ \n\ @return\ Data\ e\ hora\ do\ \u00FAltimo\ backup.\n
+comment2.params=topicId
+comment2.target=int\ lastPostOnPreviousBackup(int)
+comment2.text=\n\ Recebe\ a\ Id\ de\ um\ topico\ e\ retorna\ quantos\ posts\ havia\ neste\ topico\ \n\ quando\ foi\ realizado\ o\ ultimo\ backup.\n\ \n\ @param\ topicId\ A\ id\ do\ topico.\n\ \n\ @return\ Quantos\ posts\ havia\ neste\ topico\ no\ ultimo\ backup.\n
+comment3.params=topicId\ postNumber
+comment3.target=void\ updateLastPostNumberList(int,\ int)
+comment3.text=\n\ Insere\ na\ lista\ com\ o\ numero\ de\ posts\ de\ cada\ topico,\ o\ numero\ de\ posts\n\ (postNumber)\ no\ topico\ de\ id\ \=\ topicId.\n\ \n\ @param\ topicId\ A\ Id\ do\ topico\ que\ tera\ seu\ numero\ de\ posts\ atualizado.\n\ \n\ @param\ postNumber\ A\ indice\ do\ ultimo\ post\ neste\ topico\ ou\ o\ numero\ de\n\ posts\ no\ topico,\ o\ que\ eh\ a\ mesma\ coisa.\ \ \ \n
+comment4.params=postTopicPage
+comment4.target=void\ putPostTopicPageOnMap(java.lang.String)
+comment4.text=\n\ Insere\ o\ postId\ em\ um\ hashMap\ que\ o\ associa\ ao\ arquivo\ de\ t\u00F3pico\ onde\n\ est\u00E1\ publicado.\n\ \n\ @param\ postTopicPage\ Post\ ID,\ Topic\ ID\ e\ Page\ Index\ no\ formato\ \n\ postId\:topicId\:PageIndex\n\ \n
+comment5.params=postId
+comment5.target=java.lang.String\ getPostTopicPageOnMap(int)
+comment5.text=\n\ <p>\n\ Obt\u00E9m\ (dada\ uma\ ID\ de\ post)\ o\ postID,\ o\ topicID\ onde\ o\ post\ est\u00E1\ \n\ publicado\ e\ a\ p\u00E1gina\ desse\ t\u00F3pico\ (com\ a\ primeira\ tendo\ \u00EDndice\ 0).</p>\n\ \n\ <p>Formatado\ como\ postID\:topicID\:PageIndex</p>\n\ \n\ @param\ postId\ A\ id\ de\ um\ post.\n\ \n\ @return\ Uma\ String\ com\ postID\:topicID\:PageIndex.\n
+comment6.params=postId
+comment6.target=java.lang.String\ getFilenameOnMap(int)
+comment6.text=\n\ Obt\u00E9m\ o\ nome\ do\ arquivo\ no\ disco\ com\ a\ p\u00E1gina\ de\ t\u00F3pico\ onde\ o\ post\ de\ \n\ ID\ \=\ postId\ est\u00E1\ publicado.\ Com\ uma\ refer\u00EAncia\ para\ o\ post\ no\ nome\ do\ \n\ arquivo.\n\ \n\ @param\ postId\ A\ ID\ do\ post\ sem\ o\ prefixo\ p.\n\ \n\ @return\ Um\ nome\ como\ /t\=123&start\=50.html\#p5652\ ou\ /t\=32.html\#p54\n
+comment7.params=
+comment7.target=void\ saveAllPostsList()
+comment7.text=\n\ Acrescenta\ no\ arquivo\ com\ a\ lista\ de\ todos\ os\ posts\ (relacionados\ com\ o\n\ arquivo\ em\ que\ est\u00E3o\ publicados),\ os\ novos\ posts\ encontrados\ em\ um\ backup\n\ full\ ou\ incremental.\n
+comment8.params=
+comment8.target=void\ finish()
+comment8.text=\n\ <p>Grava\ em\ disco\ a\ lista\ com\ o\ numero\ de\ posts\ em\ cada\ topico\ obtida\ no\n\ backup\ corrente.</p>\n\ \n\ <p>Tamb\u00E9m\ atualiza\ a\ lista\ de\ nomes\ de\ arquivos\ que\n\ associa\ cada\ post\ ao\ arquivo\ em\ disco\ onde\ este\ post\ pode\ ser\ \n\ visualizado\ na\ c\u00F3pia\ est\u00E1tica.\ Uma\ lista\ completa\ com\ estes\ nomes\n\ de\ arquivos\ \u00E9\ necess\u00E1ria\ para\ agilizar\ o\ processo\ de\ edi\u00E7\u00E3o\ de\ links\n\ para\ posts.\ No\ entanto,\ obviamente,\ novos\ posts\ publicados\ desde\ o\ \n\ \u00FAltimo\ backup\ n\u00E3o\ est\u00E3o\ ainda\ presentes\ na\ lista,\ que\ portanto\ \u00E9\n\ atualizada\ ao\ final\ do\ processo\ de\ backup</p>\n\ \n\ <p>Este\ m\u00E9todo\ deve\ ser\ chamado\ ao\ t\u00E9rmino\ do\ processo\ de\ backup,\ depois\n\ que\ foi\ finalizada\ a\ edi\u00E7\u00E3o\ de\ p\u00E1ginas\ que\ gera\ a\ c\u00F3pia\ est\u00E1tica</p>\n\ \ \n\ @throws\ IOException\ Em\ caso\ de\ erro\ de\ IO\ ao\ tentar\ gravar\ o\ arquivo.\n
+comment9.params=
+comment9.target=boolean\ isIncremental()
+comment9.text=\n\ Retorna\ se\ o\ backup\ sendo\ realizado\ eh\ incremental\ ou\ full.\n\ \n\ @return\ true\ se\ for\ incremental\ ou\ false\ se\ nao.\n
+numComments=11

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Post
+comment0.text=\n\n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (18\ de\ setembro\ de\ 2022)\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=java.util.regex.Pattern\ getFinder()
+numComments=2
