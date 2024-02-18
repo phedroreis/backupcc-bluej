@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.io.File;
 
 /**
  * Metodos e campos estaticos relacionados com operacoes de conexao de internet.
@@ -87,6 +88,11 @@ public final class Util {
                 fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
             }
             catch (IOException e) {
+                
+                try {
+                    new File(pathname).delete();
+                }
+                catch(SecurityException es) {}
                 
                 String[] msgs = {
                     e.getMessage() + "\n",

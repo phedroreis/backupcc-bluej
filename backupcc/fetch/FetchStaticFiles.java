@@ -18,14 +18,24 @@ public final class FetchStaticFiles {
     
     private static final int COLOR = backupcc.tui.Tui.CYAN;
     
+    /*
+     * Procura por urls de arqs. estaticos em arquivos HTML
+     */
     private static final Pattern HTML_SEARCH = 
         Pattern.compile("(href|src|data-src-hd)=\"(.+?)\"");
     
+    /*
+     * Procura por urls de arqs. estaticos em arquivos CSS
+     */    
     private static final Pattern CSS_SEARCH =
         Pattern.compile("url\\(['\"](.+?)['\"]");
-        
-    private static final String BLOCKCODE_REGEX = 
-        "<div class=\"codebox\"><p>.+?</a></p><pre><code>.*?</code></pre></div></div>";    
+    
+    /*
+     * Nao procura por urls de arquivos estaticos no corpo de posts 
+     * dos foristas
+     */    
+    private static final String POST_CONTENT_REGEX = 
+        "<div class=\"content\">[\\s\\S]*?<span class=\"sr-only\">Voltar ao topo</span>";
     
     private static int total;
        
@@ -45,7 +55,7 @@ public final class FetchStaticFiles {
         
         try {
             
-            contentFile = backupcc.file.Util.readTextFile(file).replaceAll(BLOCKCODE_REGEX, "");
+            contentFile = backupcc.file.Util.readTextFile(file).replaceAll(POST_CONTENT_REGEX, "");
             
         }
         catch (IOException e) {
