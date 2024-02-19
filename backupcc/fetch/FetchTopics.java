@@ -146,7 +146,7 @@ final class FetchTopics {
                     String name = isIncrementalBackup ?
                         topic.getName() + " [" + (i+1) + "]" : null;
                                             
-                    backupcc.net.Util.downloadUrlToPathname(
+                    backupcc.net.Util.downloadPageToPathname(
                         topic.getAbsoluteURL(i), 
                         backupcc.file.Util.RAW_PAGES + '/' + 
                         topic.getFilename(i),

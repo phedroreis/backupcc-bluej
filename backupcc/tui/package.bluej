@@ -1,8 +1,8 @@
 #BlueJ package file
-dependency1.from=OptionBox
+dependency1.from=ProgressBar
 dependency1.to=Tui
 dependency1.type=UsesDependency
-dependency2.from=ProgressBar
+dependency2.from=OptionBox
 dependency2.to=Tui
 dependency2.type=UsesDependency
 objectbench.height=93

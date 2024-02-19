@@ -1,7 +1,6 @@
 #BlueJ class context
 comment0.target=Util
 comment0.text=\n\ Metodos\ e\ campos\ estaticos\ relacionados\ com\ operacoes\ de\ conexao\ de\ internet.\n\ \n\ @author\ "Pedro\ Reis"\n\ @since\ 1.0\ (21\ de\ agosto\ de\ 2022)\n\ @version\ 1.2\n
-comment1.params=url\ pathname\ name\ color
-comment1.target=void\ downloadUrlToPathname(java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
-comment1.text=\n\ Baixa\ um\ arquivo\ apontado\ por\ uma\ URL\ para\ um\ diretorio\ especificado\ que\n\ jah\ deve\ indicar\ tambem\ o\ nome\ do\ arquivo\ que\ serah\ gravado.\n\ \n\ @param\ url\ A\ url\ do\ arquivo\ a\ ser\ baixado.\n\ \n\ @param\ pathname\ Caminho\ absoluto\ ou\ relativo\ para\ onde\ gravar\ o\ arquivo,\n\ incluindo\ tambem\ o\ nome\ que\ serah\ dado\ ao\ arquivo\ baixado.\ Os\ diretorios\n\ neste\ caminho\ devem\ existir\ ou\ uma\ excecao\ serah\ lancada.\ Se\ um\ arquivo\ \n\ com\ o\ nome\ indicado\ em\ pathname\ nao\ existir,\ serah\ criado\ um\ arquivo\ com\n\ esse\ nome.\n\ \n\ @param\ name\ O\ nome\ (sem\ o\ caminho)\ do\ arquivo.\n\ \n\ @param\ color\ A\ cor\ do\ texto\ com\ a\ qual\ o\ m\u00E9todo\ vai\ escrever\ a\ mensagem\n\ no\ terminal.\n\ \n
+comment1.params=url\ pathname
+comment1.target=void\ downloadUrlToPathname(java.lang.String,\ java.lang.String)
 numComments=2

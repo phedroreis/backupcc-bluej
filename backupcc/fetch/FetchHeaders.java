@@ -56,7 +56,7 @@ final class FetchHeaders {
                
         for (Header header: headers) {   
             
-            backupcc.net.Util.downloadUrlToPathname(
+            backupcc.net.Util.downloadPageToPathname(
                 header.getAbsoluteURL(), 
                 backupcc.file.Util.RAW_PAGES + '/' + header.getFilename(),
                 header.getName(),

@@ -274,7 +274,7 @@ public final class OptionBox {
             "Qualquer tecla e <ENTER> para encerrar."
         };
 
-        OptionBox o = new OptionBox(aux, options, ".", Tui.RED, Tui.WHITE);
+        OptionBox o = new OptionBox(aux, options, "*", Tui.RED, Tui.WHITE);
         
         o.showBox();
         
@@ -327,8 +327,28 @@ public final class OptionBox {
         return (o.showBox() == 't'); 
         
     }//retryBox()
-      
+    
     /*[05]----------------------------------------------------------------------
+    
+    --------------------------------------------------------------------------*/
+    public static void retryOrAbortBox(final String[] msgs) {
+        
+        String[] aux = new String[msgs.length + 1]; aux[0] = "Falha!";
+        
+        System.arraycopy(msgs, 0, aux, 1, msgs.length);
+          
+        String[] options = {
+            "Abortar",
+            "Tentar novamente"
+        };
+
+        OptionBox o = new OptionBox(aux, options, "at", Tui.YELLOW, Tui.WHITE);
+        
+        if (o.showBox() == 'a') System.exit(0); 
+        
+    }//retryOrAbortBox() 
+    
+    /*[06]----------------------------------------------------------------------
     
     --------------------------------------------------------------------------*/
     /**

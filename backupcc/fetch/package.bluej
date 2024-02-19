@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=FetchSections
-dependency1.to=FetchHeaders
+dependency1.from=FetchPages
+dependency1.to=FetchTopics
 dependency1.type=UsesDependency
 dependency2.from=FetchTopics
 dependency2.to=FetchSections
 dependency2.type=UsesDependency
-dependency3.from=FetchPages
-dependency3.to=FetchTopics
+dependency3.from=FetchSections
+dependency3.to=FetchHeaders
 dependency3.type=UsesDependency
 dependency4.from=FetchHeaders
 dependency4.to=FetchMain

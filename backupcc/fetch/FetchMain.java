@@ -49,7 +49,7 @@ final class FetchMain {
      */
     private void downloadMainPage() {
               
-        backupcc.net.Util.downloadUrlToPathname(
+        backupcc.net.Util.downloadPageToPathname(
             main.getAbsoluteURL(),
             backupcc.file.Util.RAW_PAGES + '/' + main.getFilename(),
             main.getName(),

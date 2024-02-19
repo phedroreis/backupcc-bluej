@@ -62,7 +62,7 @@ final class FetchSections {
                
             for (int i = 0; i < section.getNumberOfPages(); i++) {
          
-                backupcc.net.Util.downloadUrlToPathname(
+                backupcc.net.Util.downloadPageToPathname(
                     section.getAbsoluteURL(i), 
                     backupcc.file.Util.RAW_PAGES + '/' + section.getFilename(i),
                     section.getName() + " [" + (i + 1) + "]",

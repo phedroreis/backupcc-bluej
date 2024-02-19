@@ -55,7 +55,7 @@ public final class FetchStaticFiles {
         
         try {
             
-            contentFile = backupcc.file.Util.readTextFile(file).replaceAll(POST_CONTENT_REGEX, "");
+            contentFile = backupcc.file.Util.readTextFile(file);
             
         }
         catch (IOException e) {
@@ -66,10 +66,62 @@ public final class FetchStaticFiles {
             
         }//try-catch
         
-
-        Matcher matcher = pattern.matcher(contentFile);
+        Matcher postMatcher = Pattern.compile(POST_CONTENT_REGEX).matcher(contentFile);
         
         boolean flag = true;
+        
+        while (postMatcher.find() && (group == 2)) {
+            
+            Matcher matcher = pattern.matcher(postMatcher.group());
+            
+            while (matcher.find()) {
+    
+                String url =  matcher.group(2);
+    
+                if (
+                    (url.matches(".+?\\.php.*")) &&
+                    (!url.matches(".+?file\\.php[/?]avatar=.*"))
+                ) 
+                    continue;
+    
+                if (url.startsWith(".") || url.startsWith(forumUrlPrefix)) {
+                    
+                    backupcc.net.URL urlInfo =
+                        new backupcc.net.URL(serverPath + url);
+                    
+                    String localPathname = urlInfo.getLocalPathname();
+                    String localPath = urlInfo.getLocalPath();
+                    String localFilename = urlInfo.getLocalFilename(); 
+                    
+                    File f = new File(localPathname);
+    
+                    if (!f.exists()) {
+                        
+                        if (flag) {
+                            backupcc.tui.Tui.printlnc("\n\nPesquisando em " + file.getName() + " :", backupcc.tui.Tui.WHITE);
+                            flag = false;
+                        }
+                        
+                        backupcc.file.Util.mkDirs(localPath);
+                         
+                        backupcc.net.Util.downloadSmileToPathname(
+                            urlInfo.getAbsoluteUrl(), 
+                            localPathname, 
+                            localFilename, 
+                            backupcc.tui.Tui.YELLOW
+                        );
+                       
+                    }//if
+    
+                }//if
+    
+            }//while            
+            
+        }//while
+        
+        contentFile = contentFile.replaceAll(POST_CONTENT_REGEX, "");
+        
+        Matcher matcher = pattern.matcher(contentFile);
         
         while (matcher.find()) {
 
@@ -93,17 +145,15 @@ public final class FetchStaticFiles {
                 File f = new File(localPathname);
 
                 if (!f.exists()) {
-                    
-                    backupcc.file.Util.mkDirs(localPath);
-
+                 
                     if (flag) {
-                        
-                        backupcc.tui.Tui.println("\n");
+                        backupcc.tui.Tui.printlnc("\n\nPesquisando em " + file.getName() + " :", backupcc.tui.Tui.WHITE);
                         flag = false;
-                        
                     }
                     
-                    backupcc.net.Util.downloadUrlToPathname(
+                    backupcc.file.Util.mkDirs(localPath);
+                   
+                    backupcc.net.Util.downloadStaticFileToPathname(
                         urlInfo.getAbsoluteUrl(), 
                         localPathname, 
                         localFilename, 
@@ -148,7 +198,7 @@ public final class FetchStaticFiles {
             total : backupcc.tui.ProgressBar.LENGTH;
         
         backupcc.tui.ProgressBar bar = 
-            new backupcc.tui.ProgressBar(total, barLength, COLOR);
+            new backupcc.tui.ProgressBar(total, barLength, backupcc.tui.Tui.WHITE);
         
         bar.show();
                        
