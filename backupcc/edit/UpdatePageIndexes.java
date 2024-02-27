@@ -123,15 +123,15 @@ public final class UpdatePageIndexes {
         if (TOPICS_LIST.isEmpty()) return;
         
         backupcc.tui.Tui.printlnc(
-            "\nT\u00F3picos com \u00EDndices a atualizar ...\n",
+            "\nT\u00f3picos com \u00edndices a atualizar ...\n",
             COLOR
         );
         
         for (int[] toUpdate: TOPICS_LIST) {
                     
             backupcc.tui.Tui.printlnc(
-                "T\u00F3pico: " + toUpdate[0] +
-                " -> Atualizando \u00EDndices da p\u00E1g.1 at\u00E9 p\u00E1g." +
+                "T\u00f3pico: " + toUpdate[0] +
+                " -> Atualizando \u00edndices da p\u00E1g.1 at\u00E9 p\u00E1g." +
                 toUpdate[1] + 
                 " - Nova \u00FAltima p\u00E1g.: " + 
                 toUpdate[2],
@@ -154,9 +154,9 @@ public final class UpdatePageIndexes {
                     String[] msgs = {
                         e.getMessage() + '\n',
                         "Erro ao ler: " + pathname + '\n',
-                        "Os \u00EDndices de p\u00E1ginas podem se tornar inconsistentes neste arquivo!",
+                        "Os \u00edndices de p\u00e1ginas podem se tornar inconsistentes neste arquivo!",
                         "Mesmo se o programa for abortado agora\n",
-                        "Um novo 'full backup' \u00E9 recomend\u00E1vel"
+                        "Um novo 'full backup' \u00e9 recomend\u00e1vel"
                     };
                     
                     backupcc.tui.OptionBox.warningBox(msgs);
@@ -168,10 +168,10 @@ public final class UpdatePageIndexes {
                 
                     contentFile = 
                         contentFile.replaceAll(
-                            "href=\"\\./t=\\d+.+?\u00DAltima p\u00E1g. : \\d+",
+                            "href=\"\\./t=\\d+.+?\u00daltima p\u00E1g. : \\d+",
                             "href=\"." + 
                             getFilename(toUpdate[0], toUpdate[2]) + 
-                            "\">\u00DAltima p\u00E1g. : " + 
+                            "\">\u00daltima p\u00e1g. : " + 
                             toUpdate[2]
                         );
                     
@@ -183,7 +183,7 @@ public final class UpdatePageIndexes {
                             "<div class=\"pagination\">",
                             "<div class=\"pagination\"><a style=\"color: green; \"class=\"button\" href=\"." +
                             getFilename(toUpdate[0], toUpdate[2]) +
-                            "\">\u00DAltima p\u00E1g. : " + 
+                            "\">\u00daltima p\u00e1g. : " + 
                             toUpdate[2] + 
                             "</a>"
                                     
@@ -192,7 +192,7 @@ public final class UpdatePageIndexes {
                     contentFile =
                         contentFile.replaceAll(
                             "&bull;.+?<strong>1</strong> de <strong>\\d+</strong>",
-                            "&bull; P\u00E1gina: <strong>1</strong> de <strong>" +
+                            "&bull; P\u00e1gina: <strong>1</strong> de <strong>" +
                             toUpdate[2] + 
                             "</strong>"
                         );
@@ -208,9 +208,9 @@ public final class UpdatePageIndexes {
                     String[] msgs = {
                         e.getMessage() + '\n',
                         "Erro ao gravar: " + pathname + '\n', 
-                        "Os \u00EDndices de p\u00E1ginas podem se tornar inconsistentes neste arquivo!",
+                        "Os \u00edndices de p\u00e1ginas podem se tornar inconsistentes neste arquivo!",
                         "Mesmo se o programa for abortado agora\n",
-                        "Um novo 'full backup' \u00E9 recomend\u00E1vel"
+                        "Um novo 'full backup' \u00e9 recomend\u00e1vel"
                     };
                     
                     backupcc.tui.OptionBox.warningBox(msgs);

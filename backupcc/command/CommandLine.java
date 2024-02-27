@@ -59,12 +59,12 @@ public final class CommandLine {
                     
                 default : 
                     String[] msgs = {
-                        commands[0] + " <- flag n\u00E3o reconhecido!\n",
-                        "Uso : [terminal] [listar t\u00F3picos]\n",
+                        commands[0] + " <- flag n\u00e3o reconhecido!\n",
+                        "Uso : [terminal] [listar t\u00f3picos]\n",
                         "terminal: -w , -u\n",
                         "-w: terminal modo Windows",
                         "-u: terminal modo Unix",
-                        "-t: gera arquivo com a lista de todos os t\u00F3picos"
+                        "-t: gera arquivo com a lista de todos os t\u00f3picos"
                     };
                     backupcc.tui.OptionBox.abortBox(msgs);
                 
@@ -90,7 +90,7 @@ public final class CommandLine {
         toString += backupcc.tui.Tui.isWindowsOS() ? "Windows" : "Unix";
         
         if (listTopics) 
-            toString += "\nSer\u00E1 gerado arquivo com lista de t\u00F3picos";
+            toString += "\nSer\u00e1 gerado arquivo com lista de t\u00f3picos";
                 
         return toString;
         

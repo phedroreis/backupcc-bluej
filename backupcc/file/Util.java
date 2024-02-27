@@ -45,8 +45,9 @@ public final class Util {
 </a>
 </header>
 
-<h1>Funcionalidade não disponível!</h1>
-<h2>Você está navegando por uma cópia estática do fórum.</h2>
+<h1>Funcionalidade n\u00e3o dispon\u00edvel!</h1>
+<h2>Voc\u00ea est\u00e1 navegando por uma c\u00f3pia est\u00e1tica do f\u00f3rum.</h2>
+
 </body>
 
 </html>   
@@ -63,7 +64,7 @@ public final class Util {
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="./favicon.png" />
-  <title>Lista de T\u00F3picos</title>
+  <title>Lista de T\u00f3picos</title>
   <link href="./assets/css/font-awesome.min.css?assets_version=26" rel="stylesheet">
   <link href="./styles/basic_aqua/theme/stylesheet.css?assets_version=26" rel="stylesheet">
   <style>
@@ -79,7 +80,7 @@ public final class Util {
     <a id="logo" class="logo" href="./clubeceticismo.com.br.html" title="Principal">
     <img src="./styles/basic_aqua/theme/images/logo.png" alt="Clube Ceticismo">
     </a>
-    <h2>T\u00F3picos de acesso p\u00FAblico</h2>
+    <h2>T\u00f3picos de acesso p\u00fablico</h2>
   </header>
   <ul>
      """; 
@@ -130,7 +131,7 @@ public final class Util {
         if (!dir.exists() && !dir.mkdirs()) {
             
             String[] msgs = {
-               "Falha ao criar diret\u00F3rio:\n",
+               "Falha ao criar diret\u00f3rio:\n",
                 path
             };
             
@@ -254,7 +255,7 @@ public final class Util {
             String[] msgs = {
 
                 e.getMessage() + '\n',
-                "Imposs\u00EDvel criar arquivo : " + WARNING_FILENAME
+                "Imposs\u00edvel criar arquivo : " + WARNING_FILENAME
             };
 
             backupcc.tui.OptionBox.abortBox(msgs);
@@ -289,7 +290,7 @@ public final class Util {
             String[] msgs = {
 
                 e.getMessage() + '\n',
-                "Imposs\u00EDvel criar arquivo : " + TOPICS_LIST_FILENAME
+                "Imposs\u00edvel criar arquivo : " + TOPICS_LIST_FILENAME
             };
 
             backupcc.tui.OptionBox.warningBox(msgs);

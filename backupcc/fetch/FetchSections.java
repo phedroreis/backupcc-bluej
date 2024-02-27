@@ -115,7 +115,7 @@ final class FetchSections {
                 
                 backupcc.tui.Tui.decoratedPrintlnc(
                     "Coletando dados de ", 
-                    "t\u00F3picos",
+                    "t\u00f3picos",
                     " em " + section.getName() + "  [" + (i+1) + "] ...", 
                     COLOR
                 );                

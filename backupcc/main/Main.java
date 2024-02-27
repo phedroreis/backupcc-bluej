@@ -15,7 +15,7 @@ public final class Main {
     
     --------------------------------------------------------------------------*/
     public static void main(String[] args) {
-        
+                
         /* Processa os parametros de linha de comando */
         backupcc.command.CommandLine commandLine = 
             new backupcc.command.CommandLine(args);
@@ -60,7 +60,7 @@ public final class Main {
             String[] msgs = {
                 e.getMessage() + '\n',
                 "Falha ao gravar arquivos de dados do backup\n",
-                "Este backup n\u00E3o deve ser utilizado\n",
+                "Este backup n\u00e3o deve ser utilizado\n",
                 "Apague a pasta " + backupcc.file.Util.RAW_PAGES + " e",
                 "renomeie a pasta de algum backup anterior para " + 
                 backupcc.file.Util.RAW_PAGES + '\n',

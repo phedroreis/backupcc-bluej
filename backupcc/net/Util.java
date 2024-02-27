@@ -115,7 +115,7 @@ public final class Util {
                 String[] msgs = {
                     e.getMessage() + "\n",
                     "Erro ao obter: " + pathname + "\n",
-                    "Voc\u00EA pode desistir ou tentar novamente\n"
+                    "Voc\u00ea pode desistir ou tentar novamente\n"
                 };
                 
                 retry = backupcc.tui.OptionBox.retryBox(msgs);
@@ -125,10 +125,10 @@ public final class Util {
                     String[] warnMsgs = {
                         "Falha ao obter: " + pathname + "\n",
                         "O backup ainda pode prosseguir, mas a",
-                        "aus\u00EAncia deste arquivo pode prejudicar a",
-                        "visualiza\u00E7\u00E3o de algumas p\u00E1ginas\n",
+                        "aus\u00eancia deste arquivo pode prejudicar a",
+                        "visualiza\u00e7\u00e3o de algumas p\u00e1ginas\n",
                         "Aborte se o arquivo for JS ou CSS e tente mais tarde",
-                        "A MENOS QUE SAIBA O QUE EST\u00C1 FAZENDO!"
+                        "A MENOS QUE SAIBA O QUE EST\u00c1 FAZENDO!"
                     };
 
                     backupcc.tui.OptionBox.warningBox(warnMsgs); 
@@ -238,8 +238,8 @@ public final class Util {
                 String[] msgs = {
                     e.getMessage() + "\n",
                     "Erro ao obter: " + pathname + "\n",
-                    "O backup n\u00E3o pode prosseguir sem este arquivo",
-                    "Voc\u00EA pode abortar o backup ou tentar novamente\n"
+                    "O backup n\u00e3o pode prosseguir sem este arquivo",
+                    "Voc\u00ea pode abortar o backup ou tentar novamente\n"
                 };
                 
                 backupcc.tui.OptionBox.retryOrAbortBox(msgs);

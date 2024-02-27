@@ -100,7 +100,7 @@ final class FetchMain {
         
         backupcc.tui.Tui.decoratedPrintlnc(
             "Coletando dados de ", 
-            "cabe\u00E7alhos",
+            "cabe\u00e7alhos",
             " na " + main.getName() + " ...", 
             COLOR
         );

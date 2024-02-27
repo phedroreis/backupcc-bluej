@@ -32,7 +32,7 @@ public final class Section extends Page {
         Pattern.compile(
             "<a href=\"[.]/viewforum[.]php[?]f=.+?" +
             "class=\"forumtitle\" data-id=\"(\\d+)\">(.+)</a>" +
-            "[^ł]+?Tópicos</span>: <span class=\"value\">(\\d+)"
+            "[\\s\\S]+?T.picos</span>: <span class=\"value\">(\\d+)"
         ); 
      
     /*[00]----------------------------------------------------------------------
@@ -77,9 +77,9 @@ public final class Section extends Page {
             numberOfTopics = 0;//final tem que ser inicializada
             
             String[] msgs = {                
-                "Dados de se\u00E7\u00E3o n\u00E3o localizados\n",
+                "Dados de se\u00e7\u00e3o n\u00e3o localizados\n",
                 "Houve um erro ao fazer o 'parse' de um trecho HTML",
-                "O backup ser\u00E1 abortado\n",
+                "O backup ser\u00e1 abortado\n",
                 "Execute novamente o programa com java -ea 'nomeDoPrograma'",
                 "E contacte o desenvolvedor"
             };

@@ -25,7 +25,7 @@ public final class Main extends Page {
      */
     public Main(final String url, final String filename) {
         id = 0;
-        name = "P\u00E1gina Principal";
+        name = "P\u00e1gina Principal";
         absoluteURL = url;
         this.filename = filename;
     }//construtor

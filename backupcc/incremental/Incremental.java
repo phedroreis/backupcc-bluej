@@ -183,7 +183,7 @@ public final class Incremental {
                        
             String[] msgs = {
                 "Dados do backup anterior n\u00e3o existem ou est\u00e3o corrompidos",
-                "Se continuar ser\u00E1 iniciado um \"full backup\"\n",
+                "Se continuar ser\u00e1 iniciado um \"full backup\"\n",
                 "Ou pode abortar e restaurar o backup destes arquivos"
             };
 
@@ -445,7 +445,7 @@ public final class Incremental {
         if (lastBackupDatetime == null) return "Full backup";
         
         return 
-            "\u00DAltimo backup realizado em " +
+            "\u00daltimo backup realizado em " +
             backupcc.datetime.Util.dateTime(lastBackupDatetime);
         
     }//lastBackupDatetime()

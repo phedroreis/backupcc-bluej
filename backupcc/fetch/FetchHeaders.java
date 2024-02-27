@@ -106,7 +106,7 @@ final class FetchHeaders {
             
             backupcc.tui.Tui.decoratedPrintlnc(
                 "Coletando dados de ", 
-                "se\u00E7\u00F5es",
+                "se\u00e7\u00f5es",
                 " em " + header.getName() + " ...", 
                 COLOR
             );

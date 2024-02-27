@@ -26,7 +26,7 @@ public class Util {
     
     private final static String[] MESES = {
         
-        "janeiro", "fevereiro", "mar\u00E7o", "abril", "maio", "junho",
+        "janeiro", "fevereiro", "mar\u00e7o", "abril", "maio", "junho",
         "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
     };
     
@@ -90,7 +90,7 @@ public class Util {
         m.find();
         
         return String.format(
-            "%s de %s de %s \u00E0s %s", 
+            "%s de %s de %s \u00e0s %s", 
             m.group(1),
             MESES[Integer.valueOf(m.group(2)) - 1],
             m.group(3),

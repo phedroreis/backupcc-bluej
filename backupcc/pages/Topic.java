@@ -30,7 +30,7 @@ public final class Topic extends Page {
     private static final Pattern FINDER_REGEXP = 
         Pattern.compile(
             "<a href=\"[.]/viewtopic[.]php[?].+?t=(\\d+).+?class=" +
-            "\"topictitle\">(.+?)</a>[^ł]+?<dd class=\"posts\">(\\d+)"
+            "\"topictitle\">(.+?)</a>[\\s\\S]+?<dd class=\"posts\">(\\d+)"
         ); 
      
     /*[00]----------------------------------------------------------------------
@@ -75,9 +75,9 @@ public final class Topic extends Page {
             numberOfPosts = 0;//final tem que ser inicializada
             
             String[] msgs = {                
-                "Dados de t\u00F3pico n\u00E3o localizados\n",
+                "Dados de t\u00f3pico n\u00f3o localizados\n",
                 "Houve um erro ao fazer o 'parse' de um trecho HTML",
-                "O backup ser\u00E1 abortado\n",
+                "O backup ser\u00f1 abortado\n",
                 "Execute novamente o programa com java -ea 'nomeDoPrograma'",
                 "E contacte o desenvolvedor"
             };

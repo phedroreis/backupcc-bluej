@@ -236,11 +236,11 @@ public final class OptionBox {
             try {
     
                 c = scanner.next(shortcuts).toLowerCase().charAt(0);
-                
+                if (shortcuts.equals(".")) return c;
             }
             catch (InputMismatchException e) {
                 
-                Tui.printlnc("Op\u00E7\u00E3o inv\u00E1lida!", Tui.RED);
+                Tui.printlnc("Op\u00e7\u00e3o inv\u00e1lida!", Tui.RED);
                 
                 inputMismatch = true;
                 
@@ -274,7 +274,7 @@ public final class OptionBox {
             "Qualquer tecla e <ENTER> para encerrar."
         };
 
-        OptionBox o = new OptionBox(aux, options, "*", Tui.RED, Tui.WHITE);
+        OptionBox o = new OptionBox(aux, options, ".", Tui.RED, Tui.WHITE);
         
         o.showBox();
         

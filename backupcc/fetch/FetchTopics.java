@@ -52,8 +52,8 @@ final class FetchTopics {
     ) {
         
         String format = String.format(
-            "%s%d t\u00F3pico%s com novas postagens desde " +
-            "o \u00FAltimo backup",
+            "%s%d t\u00f3pico%s com novas postagens desde " +
+            "o \u00faltimo backup",
             (updatedTopics > 0) ? "\n" : "",
             updatedTopics,
             ((updatedTopics == 1) ? "" : "s")
@@ -62,7 +62,7 @@ final class FetchTopics {
         backupcc.tui.Tui.printlnc(format, COLOR);
 
         format = String.format(
-            "%d post%s desde o \u00FAltimo backup",
+            "%d post%s desde o \u00faltimo backup",
             totalOfNewPosts,
             (totalOfNewPosts == 1) ? "" : "s"
         );
@@ -91,11 +91,11 @@ final class FetchTopics {
         int total = topics.size(); 
         
         backupcc.tui.Tui.printlnc(
-            "\n" + total + " t\u00F3picos p\u00FAblicos encontrados\n", COLOR
+            "\n" + total + " t\u00f3picos encontrados\n", COLOR
         );
     
         backupcc.tui.Tui.printlnc(
-            "Obtendo p\u00E1ginas de t\u00F3picos ...", COLOR
+            "Obtendo p\u00e1ginas de t\u00f3picos ...", COLOR
         );
          
         ProgressBar pBar = new ProgressBar(total, ProgressBar.LENGTH, COLOR);
@@ -237,12 +237,26 @@ final class FetchTopics {
                 
             }//try-catch
             
+            String topicName = topicFile.getName();
+            
             Matcher matcher = 
-                TOPIC_FILENAME_PATTERN.matcher(topicFile.getName());
+                TOPIC_FILENAME_PATTERN.matcher(topicName);
                 
             boolean find = (matcher.find()); 
             
             assert(find) : "It's not a topic file";
+            
+            if (!find) {
+                
+                String[] msgs = {                
+                "Houve um erro ao fazer o 'parse' de um trecho HTML",
+                "O backup ser\u00e1 abortado\n",
+                "Execute novamente o programa com java -ea 'nomeDoPrograma'",
+                "E contacte o desenvolvedor"
+                };
+            
+                backupcc.tui.OptionBox.abortBox(msgs);
+            }
 
             int topicId = Integer.valueOf(matcher.group(1));
             

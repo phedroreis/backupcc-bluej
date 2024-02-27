@@ -26,7 +26,7 @@ public final class Header extends Page {
      * (item list) cujo class ="header".
      */
     private static final Pattern FINDER_REGEXP = 
-        Pattern.compile("<li class=\"header\">(.|\\n)+?</li>");
+        Pattern.compile("<li class=\"header\">([\\s\\S]+?)</li>");
     /*
     Localiza ID e NOME do HEADER no bloco de codigo HTML localizado pelo 
     Pattern FINDER_REGEXP
@@ -79,9 +79,9 @@ public final class Header extends Page {
         */
         else {
             String[] msgs = {                
-                "Dados de cabe\u00E7alho n\u00E3o localizados\n",
+                "Dados de cabe\u00e7alho n\u00e3o localizados\n",
                 "Houve um erro ao fazer o 'parse' de um trecho HTML",
-                "O backup ser\u00E1 abortado\n",
+                "O backup ser\u00e1 abortado\n",
                 "Execute novamente o programa com java -ea 'nomeDoPrograma'",
                 "E contacte o desenvolvedor"
             };

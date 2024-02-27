@@ -264,7 +264,7 @@ public abstract class EditableLink {
         File[] listFiles = dir.listFiles(new backupcc.file.ForumPageFilter());
 
         backupcc.tui.Tui.printlnc(
-            "\nEditando p\u00E1ginas do f\u00F3rum ...",
+            "\nEditando p\u00e1ginas do f\u00f3rum ...",
             COLOR
         );
 
@@ -295,7 +295,7 @@ public abstract class EditableLink {
                 String[] msgs = {
                     e.getMessage() + '\n',
                     "Erro ao ler " + file.getName() + '\n',
-                    "O backup n\u00E3o pode continuar sem este arquivo\n",
+                    "O backup n\u00e3o pode continuar sem este arquivo\n",
                     "Execute um novo processo de backup"
                     
                 };
@@ -362,7 +362,7 @@ public abstract class EditableLink {
                 String[] msgs = {
                     e.getMessage() + '\n',
                     "Erro ao gravar " + file.getName() + '\n',
-                    "A backup n\u00E3o pode continuar sem este arquivo\n",
+                    "A backup n\u00e3o pode continuar sem este arquivo\n",
                     "Execute um novo processo de backup"
                     
                 };
